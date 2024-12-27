@@ -1,0 +1,48 @@
+.student{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    padding: 14px;
+}
+.msg{
+    font-size: larger;
+    background-color: aquamarine;
+    color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20%;
+    margin: 0 auto;
+}
+.prompt{
+    font-size: larger;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    padding: 20px;
+    border-radius: 30px;
+}
+.category{
+    font-size: larger;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkblue;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.listItems{
+    font-size: medium;
+    background-color: rgb(240, 95, 95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px;
+}
