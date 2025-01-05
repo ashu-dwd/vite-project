@@ -1,48 +1,272 @@
-.student{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-    padding: 14px;
+.student {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  padding: 14px;
 }
-.msg{
-    font-size: larger;
-    background-color: aquamarine;
-    color: brown;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 20%;
-    margin: 0 auto;
+.msg {
+  font-size: larger;
+  background-color: aquamarine;
+  color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20%;
+  margin: 0 auto;
 }
-.prompt{
-    font-size: larger;
-    background-color: yellowgreen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: antiquewhite;
-    padding: 20px;
-    border-radius: 30px;
+.prompt {
+  font-size: larger;
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+  padding: 20px;
+  border-radius: 30px;
 }
-.category{
-    font-size: larger;
-    background-color: lightblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: darkblue;
-    padding: 15px;
-    border-radius: 25px;
+.category {
+  font-size: larger;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: darkblue;
+  padding: 15px;
+  border-radius: 25px;
 }
 
-.listItems{
-    font-size: medium;
-    background-color: rgb(240, 95, 95);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    padding: 10px;
-    border-radius: 15px;
-    margin: 5px;
+.listItems {
+  font-size: medium;
+  background-color: rgb(240, 95, 95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 5px;
+}
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.counter-container button.counter {
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  min-width: 100px;
+}
+
+/* Specific button styles */
+button.counter:nth-child(2) {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+button.counter:nth-child(3) {
+  background-color: #666;
+  color: white;
+}
+
+button.counter:nth-child(4) {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Hover effects */
+button.counter:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.counter:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .counter-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .counter-container button.counter {
+    font-size: 1.25rem;
+    padding: 0.4rem 1.5rem;
+    min-width: 80px;
+  }
+}
+/* Modern Form Container */
+div {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 3rem;
+  background: linear-gradient(145deg, #ffffff, #f5f5f5);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.05);
+  font-family: "Inter", -apple-system, system-ui, sans-serif;
+}
+
+/* Input Fields Styling */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  margin: 0.8rem 0;
+  border: 2px solid #eaeaea;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: white;
+  color: #2d3748;
+  outline: none;
+}
+
+/* Input Focus Effects */
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Textarea Specific Styles */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Select Dropdown Styling */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+/* Radio Button Group Styling */
+label {
+  display: inline-flex;
+  align-items: center;
+  margin: 0.5rem 1.5rem 0.5rem 0;
+  cursor: pointer;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 2px solid #cbd5e0;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="radio"]:checked {
+  border-color: #6366f1;
+  background-color: #6366f1;
+}
+
+input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* Text Display Styling */
+p {
+  margin: 0.5rem 0 1.5rem;
+  padding: 0.8rem;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  color: #4a5568;
+  font-size: 0.95rem;
+  border-left: 3px solid #6366f1;
+}
+
+/* Placeholder Styling */
+::placeholder {
+  color: #a0aec0;
+  opacity: 1;
+}
+
+/* Hover Effects */
+input:hover,
+textarea:hover,
+select:hover {
+  border-color: #cbd5e0;
+}
+
+/* Animation for Value Changes */
+p {
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  div {
+    margin: 20px;
+    padding: 1.5rem;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  select {
+    padding: 0.8rem 1rem;
+  }
+}
+
+/* Error State Styling */
+input:invalid,
+textarea:invalid,
+select:invalid {
+  border-color: #fc8181;
+}
+
+/* Success State Styling */
+input:valid:not(:placeholder-shown),
+textarea:valid:not(:placeholder-shown),
+select:valid:not(:placeholder-shown) {
+  border-color: #68d391;
 }
